@@ -51,15 +51,15 @@ def main(stdscr):
             stdscr.addstr(i, 0, line)
 
             # Doplňte další text pod ASCII art
-            stdscr.addstr(19, 0, "Select and ENTER for playing, Q for STOP or EXIT")
+            stdscr.addstr(8, 0, "Select and ENTER for playing, Q for STOP or EXIT")
     
 
         # Vykreslení seznamu stanic
         for idx, (name, _) in enumerate(stations):
             if idx == current_row:
-                stdscr.addstr(8 + idx, 0, name, curses.A_REVERSE)  # Zvýraznění
+                stdscr.addstr(10 + idx, 0, name, curses.A_REVERSE)  # Zvýraznění
             else:
-                stdscr.addstr(8 + idx, 0, name)
+                stdscr.addstr(10 + idx, 0, name)
 
         # Získání vstupu od uživatele
         key = stdscr.getch()
