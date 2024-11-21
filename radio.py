@@ -51,7 +51,7 @@ def main(stdscr):
             stdscr.addstr(i, 0, line)
 
             # Doplňte další text pod ASCII art
-            stdscr.addstr(19, 0, "Select and ENTER for playing, Q for STOP (or EXIT))
+            stdscr.addstr(19, 0, "Select and ENTER for playing, Q for STOP (or EXIT)
     
 
         # Vykreslení seznamu stanic
