@@ -51,8 +51,8 @@ def main(stdscr):
             stdscr.addstr(i, 0, line)
 
             # Doplňte další text pod ASCII art
-            stdscr.addstr(20, 0, "Vyberte stanici a stiskněte Enter pro přehrávání")
-            stdscr.addstr(21, 0, "Q - Konec")
+            stdscr.addstr(19, 0, "Select and ENTER for playing, Q for STOP (or EXIT))
+    
 
         # Vykreslení seznamu stanic
         for idx, (name, _) in enumerate(stations):
